@@ -16,19 +16,14 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "BalanceWheel"
-  s.version      = "0.0.1"
-  s.summary      = "A short description of BalanceWheel."
+  s.version      = "0.9.0"
+  s.summary      = "A user default base on JSON."
 
   s.description  = <<-DESC
-                   A longer description of BalanceWheel in Markdown format.
-
-                   * Think: Why did you write this? What is the focus? What does it do?
-                   * CocoaPods will be using this to generate tags, and improve search results.
-                   * Try to keep it short, snappy and to the point.
-                   * Finally, don't worry about the indent, CocoaPods strips it!
+                   A user default base on JSON. Both for OSX and iOS.
                    DESC
 
-  s.homepage     = "http://EXAMPLE/BalanceWheel"
+  s.homepage     = "https://github.com/seraphcxl/BalanceWheel"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -39,7 +34,7 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = "MIT (example)"
+  s.license      = "MIT"
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
@@ -78,7 +73,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "http://EXAMPLE/BalanceWheel.git", :tag => "0.0.1" }
+  s.source       = { :git => "https://github.com/seraphcxl/BalanceWheel.git", :tag => s.version.to_s }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

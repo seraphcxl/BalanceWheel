@@ -25,6 +25,7 @@
 		894320EF199219F00008FCD3 /* DCJSONUserDefault.m in Sources */ = {isa = PBXBuildFile; fileRef = 894320EC199219F00008FCD3 /* DCJSONUserDefault.m */; };
 		894320F0199219F00008FCD3 /* DCJSONUserDefault.m in Sources */ = {isa = PBXBuildFile; fileRef = 894320EC199219F00008FCD3 /* DCJSONUserDefault.m */; };
 		894320F1199219F00008FCD3 /* DCJSONUserDefault.m in Sources */ = {isa = PBXBuildFile; fileRef = 894320EC199219F00008FCD3 /* DCJSONUserDefault.m */; };
+		89BB70F8199316DE0064B9C4 /* DCBalanceWheel.h in Headers */ = {isa = PBXBuildFile; fileRef = 89BB70F7199316DE0064B9C4 /* DCBalanceWheel.h */; };
 		AB31B80116BB4924B70C0D34 /* libPods-BalanceWheel-OSX.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF6681BD3834B50982446AA /* libPods-BalanceWheel-OSX.a */; };
 		CB048BF815E44619919E9A1E /* libPods-BalanceWheel-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F9BBFA088B204071BAE0F6A5 /* libPods-BalanceWheel-iOS.a */; };
 /* End PBXBuildFile section */
@@ -82,6 +83,7 @@
 		894320E2199219990008FCD3 /* BalanceWheel_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BalanceWheel_iOSTests.m; sourceTree = "<group>"; };
 		894320EB199219F00008FCD3 /* DCJSONUserDefault.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCJSONUserDefault.h; sourceTree = "<group>"; };
 		894320EC199219F00008FCD3 /* DCJSONUserDefault.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCJSONUserDefault.m; sourceTree = "<group>"; };
+		89BB70F7199316DE0064B9C4 /* DCBalanceWheel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCBalanceWheel.h; sourceTree = "<group>"; };
 		B746A31E1CC14788B51EDC17 /* Pods-BalanceWheel-OSX.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BalanceWheel-OSX.xcconfig"; path = "Pods/Pods-BalanceWheel-OSX.xcconfig"; sourceTree = "<group>"; };
 		F9BBFA088B204071BAE0F6A5 /* libPods-BalanceWheel-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BalanceWheel-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -182,6 +184,7 @@
 		8943207D199218EC0008FCD3 /* BalanceWheel */ = {
 			isa = PBXGroup;
 			children = (
+				89BB70F7199316DE0064B9C4 /* DCBalanceWheel.h */,
 				894320EA199219D70008FCD3 /* Public */,
 			);
 			path = BalanceWheel;
@@ -271,6 +274,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89BB70F8199316DE0064B9C4 /* DCBalanceWheel.h in Headers */,
 				894320ED199219F00008FCD3 /* DCJSONUserDefault.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
