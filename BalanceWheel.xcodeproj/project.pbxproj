@@ -1,1670 +1,795 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>0E5AD530A00240BE98FA8BA2</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>1DF6681BD3834B50982446AA</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods-BalanceWheel-OSX.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>48A6F6724CBF450581255789</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>55AEAC00F54A411989BD828E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-BalanceWheel-iOS.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Pods-BalanceWheel-iOS.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8943206B199218EC0008FCD3</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>8943207D199218EC0008FCD3</string>
-				<string>894320A41992198E0008FCD3</string>
-				<string>894320B41992198E0008FCD3</string>
-				<string>894320C9199219990008FCD3</string>
-				<string>894320DC199219990008FCD3</string>
-				<string>89432076199218EC0008FCD3</string>
-				<string>89432075199218EC0008FCD3</string>
-				<string>B746A31E1CC14788B51EDC17</string>
-				<string>55AEAC00F54A411989BD828E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8943206C199218EC0008FCD3</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastUpgradeCheck</key>
-				<string>0510</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>Derek Chen</string>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>8943206F199218EC0008FCD3</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-			</array>
-			<key>mainGroup</key>
-			<string>8943206B199218EC0008FCD3</string>
-			<key>productRefGroup</key>
-			<string>89432075199218EC0008FCD3</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>894320A11992198E0008FCD3</string>
-				<string>894320AD1992198E0008FCD3</string>
-				<string>894320C5199219990008FCD3</string>
-				<string>894320D3199219990008FCD3</string>
-			</array>
-		</dict>
-		<key>8943206F199218EC0008FCD3</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>89432096199218ED0008FCD3</string>
-				<string>89432097199218ED0008FCD3</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>89432075199218EC0008FCD3</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>894320A21992198E0008FCD3</string>
-				<string>894320AE1992198E0008FCD3</string>
-				<string>894320C6199219990008FCD3</string>
-				<string>894320D4199219990008FCD3</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>89432076199218EC0008FCD3</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>89432077199218EC0008FCD3</string>
-				<string>89432088199218EC0008FCD3</string>
-				<string>894320C7199219990008FCD3</string>
-				<string>894320D7199219990008FCD3</string>
-				<string>89432079199218EC0008FCD3</string>
-				<string>1DF6681BD3834B50982446AA</string>
-				<string>F9BBFA088B204071BAE0F6A5</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>89432077199218EC0008FCD3</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Cocoa.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/Cocoa.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>89432079199218EC0008FCD3</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>8943207A199218EC0008FCD3</string>
-				<string>8943207B199218EC0008FCD3</string>
-				<string>8943207C199218EC0008FCD3</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Other Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8943207A199218EC0008FCD3</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>8943207B199218EC0008FCD3</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>CoreData.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/CoreData.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>8943207C199218EC0008FCD3</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>AppKit.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/AppKit.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>8943207D199218EC0008FCD3</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>894320EA199219D70008FCD3</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>BalanceWheel</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>89432088199218EC0008FCD3</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>XCTest.framework</string>
-			<key>path</key>
-			<string>Library/Frameworks/XCTest.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>89432096199218ED0008FCD3</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_ENABLE_OBJC_EXCEPTIONS</key>
-				<string>YES</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>MACOSX_DEPLOYMENT_TARGET</key>
-				<string>10.9</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>macosx</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>89432097199218ED0008FCD3</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_ENABLE_OBJC_EXCEPTIONS</key>
-				<string>YES</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>MACOSX_DEPLOYMENT_TARGET</key>
-				<string>10.9</string>
-				<key>SDKROOT</key>
-				<string>macosx</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>8943209E1992198E0008FCD3</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>894320A91992198E0008FCD3</string>
-				<string>894320EE199219F00008FCD3</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>8943209F1992198E0008FCD3</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>894320A31992198E0008FCD3</string>
-				<string>AB31B80116BB4924B70C0D34</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>894320A01992198E0008FCD3</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>894320ED199219F00008FCD3</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>894320A11992198E0008FCD3</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>894320BC1992198E0008FCD3</string>
-			<key>buildPhases</key>
-			<array>
-				<string>0E5AD530A00240BE98FA8BA2</string>
-				<string>8943209E1992198E0008FCD3</string>
-				<string>8943209F1992198E0008FCD3</string>
-				<string>894320A01992198E0008FCD3</string>
-				<string>89737AB5EBD84FEFB43E3A58</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>BalanceWheel-OSX</string>
-			<key>productName</key>
-			<string>BalanceWheel-OSX</string>
-			<key>productReference</key>
-			<string>894320A21992198E0008FCD3</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>894320A21992198E0008FCD3</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libBalanceWheel-OSX.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>894320A31992198E0008FCD3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>89432077199218EC0008FCD3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>894320A41992198E0008FCD3</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>894320A71992198E0008FCD3</string>
-				<string>894320A81992198E0008FCD3</string>
-				<string>894320A51992198E0008FCD3</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>BalanceWheel-OSX</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>894320A51992198E0008FCD3</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>894320A61992198E0008FCD3</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>894320A61992198E0008FCD3</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>BalanceWheel-OSX-Prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>894320A71992198E0008FCD3</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>BalanceWheel_OSX.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>894320A81992198E0008FCD3</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>BalanceWheel_OSX.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>894320A91992198E0008FCD3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>894320A81992198E0008FCD3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>894320AA1992198E0008FCD3</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>894320BB1992198E0008FCD3</string>
-				<string>894320EF199219F00008FCD3</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>894320AB1992198E0008FCD3</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>894320B01992198E0008FCD3</string>
-				<string>894320AF1992198E0008FCD3</string>
-				<string>894320B31992198E0008FCD3</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>894320AC1992198E0008FCD3</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>894320B91992198E0008FCD3</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>894320AD1992198E0008FCD3</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>894320BF1992198E0008FCD3</string>
-			<key>buildPhases</key>
-			<array>
-				<string>894320AA1992198E0008FCD3</string>
-				<string>894320AB1992198E0008FCD3</string>
-				<string>894320AC1992198E0008FCD3</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>894320B21992198E0008FCD3</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>BalanceWheel-OSXTests</string>
-			<key>productName</key>
-			<string>BalanceWheel-OSXTests</string>
-			<key>productReference</key>
-			<string>894320AE1992198E0008FCD3</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.unit-test</string>
-		</dict>
-		<key>894320AE1992198E0008FCD3</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>BalanceWheel-OSXTests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>894320AF1992198E0008FCD3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>89432088199218EC0008FCD3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>894320B01992198E0008FCD3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>89432077199218EC0008FCD3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>894320B11992198E0008FCD3</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>8943206C199218EC0008FCD3</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>894320A11992198E0008FCD3</string>
-			<key>remoteInfo</key>
-			<string>BalanceWheel-OSX</string>
-		</dict>
-		<key>894320B21992198E0008FCD3</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>894320A11992198E0008FCD3</string>
-			<key>targetProxy</key>
-			<string>894320B11992198E0008FCD3</string>
-		</dict>
-		<key>894320B31992198E0008FCD3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>894320A21992198E0008FCD3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>894320B41992198E0008FCD3</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>894320BA1992198E0008FCD3</string>
-				<string>894320B51992198E0008FCD3</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>BalanceWheel-OSXTests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>894320B51992198E0008FCD3</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>894320B61992198E0008FCD3</string>
-				<string>894320B71992198E0008FCD3</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>894320B61992198E0008FCD3</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>BalanceWheel-OSXTests-Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>894320B71992198E0008FCD3</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>894320B81992198E0008FCD3</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>894320B81992198E0008FCD3</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>en</string>
-			<key>path</key>
-			<string>en.lproj/InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>894320B91992198E0008FCD3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>894320B71992198E0008FCD3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>894320BA1992198E0008FCD3</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>BalanceWheel_OSXTests.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>894320BB1992198E0008FCD3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>894320BA1992198E0008FCD3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>894320BC1992198E0008FCD3</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>894320BD1992198E0008FCD3</string>
-				<string>894320BE1992198E0008FCD3</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>894320BD1992198E0008FCD3</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>B746A31E1CC14788B51EDC17</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>BalanceWheel-OSX/BalanceWheel-OSX-Prefix.pch</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>894320BE1992198E0008FCD3</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>B746A31E1CC14788B51EDC17</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>BalanceWheel-OSX/BalanceWheel-OSX-Prefix.pch</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>894320BF1992198E0008FCD3</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>894320C01992198E0008FCD3</string>
-				<string>894320C11992198E0008FCD3</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>894320C01992198E0008FCD3</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>COMBINE_HIDPI_IMAGES</key>
-				<string>YES</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>BalanceWheel-OSX/BalanceWheel-OSX-Prefix.pch</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>INFOPLIST_FILE</key>
-				<string>BalanceWheel-OSXTests/BalanceWheel-OSXTests-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>xctest</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>894320C11992198E0008FCD3</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>COMBINE_HIDPI_IMAGES</key>
-				<string>YES</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>BalanceWheel-OSX/BalanceWheel-OSX-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>BalanceWheel-OSXTests/BalanceWheel-OSXTests-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>xctest</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>894320C2199219990008FCD3</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>894320CF199219990008FCD3</string>
-				<string>894320F0199219F00008FCD3</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>894320C3199219990008FCD3</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>894320C8199219990008FCD3</string>
-				<string>CB048BF815E44619919E9A1E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>894320C4199219990008FCD3</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>dstPath</key>
-			<string>include/$(PRODUCT_NAME)</string>
-			<key>dstSubfolderSpec</key>
-			<string>16</string>
-			<key>files</key>
-			<array>
-				<string>894320CD199219990008FCD3</string>
-			</array>
-			<key>isa</key>
-			<string>PBXCopyFilesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>894320C5199219990008FCD3</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>894320E4199219990008FCD3</string>
-			<key>buildPhases</key>
-			<array>
-				<string>48A6F6724CBF450581255789</string>
-				<string>894320C2199219990008FCD3</string>
-				<string>894320C3199219990008FCD3</string>
-				<string>894320C4199219990008FCD3</string>
-				<string>DA0DA9AAEF984DFD8ECF6207</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>BalanceWheel-iOS</string>
-			<key>productName</key>
-			<string>BalanceWheel-iOS</string>
-			<key>productReference</key>
-			<string>894320C6199219990008FCD3</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>894320C6199219990008FCD3</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libBalanceWheel-iOS.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>894320C7199219990008FCD3</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>894320C8199219990008FCD3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>894320C7199219990008FCD3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>894320C9199219990008FCD3</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>894320CC199219990008FCD3</string>
-				<string>894320CE199219990008FCD3</string>
-				<string>894320CA199219990008FCD3</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>BalanceWheel-iOS</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>894320CA199219990008FCD3</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>894320CB199219990008FCD3</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>894320CB199219990008FCD3</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>BalanceWheel-iOS-Prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>894320CC199219990008FCD3</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>BalanceWheel_iOS.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>894320CD199219990008FCD3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>894320CC199219990008FCD3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>894320CE199219990008FCD3</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>BalanceWheel_iOS.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>894320CF199219990008FCD3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>894320CE199219990008FCD3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>894320D0199219990008FCD3</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>894320E3199219990008FCD3</string>
-				<string>894320F1199219F00008FCD3</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>894320D1199219990008FCD3</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>894320D5199219990008FCD3</string>
-				<string>894320D8199219990008FCD3</string>
-				<string>894320DB199219990008FCD3</string>
-				<string>894320D6199219990008FCD3</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>894320D2199219990008FCD3</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>894320E1199219990008FCD3</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>894320D3199219990008FCD3</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>894320E7199219990008FCD3</string>
-			<key>buildPhases</key>
-			<array>
-				<string>894320D0199219990008FCD3</string>
-				<string>894320D1199219990008FCD3</string>
-				<string>894320D2199219990008FCD3</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>894320DA199219990008FCD3</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>BalanceWheel-iOSTests</string>
-			<key>productName</key>
-			<string>BalanceWheel-iOSTests</string>
-			<key>productReference</key>
-			<string>894320D4199219990008FCD3</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.unit-test</string>
-		</dict>
-		<key>894320D4199219990008FCD3</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>BalanceWheel-iOSTests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>894320D5199219990008FCD3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>89432088199218EC0008FCD3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>894320D6199219990008FCD3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>894320C7199219990008FCD3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>894320D7199219990008FCD3</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>UIKit.framework</string>
-			<key>path</key>
-			<string>Library/Frameworks/UIKit.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>894320D8199219990008FCD3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>894320D7199219990008FCD3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>894320D9199219990008FCD3</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>8943206C199218EC0008FCD3</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>894320C5199219990008FCD3</string>
-			<key>remoteInfo</key>
-			<string>BalanceWheel-iOS</string>
-		</dict>
-		<key>894320DA199219990008FCD3</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>894320C5199219990008FCD3</string>
-			<key>targetProxy</key>
-			<string>894320D9199219990008FCD3</string>
-		</dict>
-		<key>894320DB199219990008FCD3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>894320C6199219990008FCD3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>894320DC199219990008FCD3</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>894320E2199219990008FCD3</string>
-				<string>894320DD199219990008FCD3</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>BalanceWheel-iOSTests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>894320DD199219990008FCD3</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>894320DE199219990008FCD3</string>
-				<string>894320DF199219990008FCD3</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>894320DE199219990008FCD3</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>BalanceWheel-iOSTests-Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>894320DF199219990008FCD3</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>894320E0199219990008FCD3</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>894320E0199219990008FCD3</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>en</string>
-			<key>path</key>
-			<string>en.lproj/InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>894320E1199219990008FCD3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>894320DF199219990008FCD3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>894320E2199219990008FCD3</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>BalanceWheel_iOSTests.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>894320E3199219990008FCD3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>894320E2199219990008FCD3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>894320E4199219990008FCD3</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>894320E5199219990008FCD3</string>
-				<string>894320E6199219990008FCD3</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>894320E5199219990008FCD3</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>55AEAC00F54A411989BD828E</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>DSTROOT</key>
-				<string>/tmp/BalanceWheel_iOS.dst</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>BalanceWheel-iOS/BalanceWheel-iOS-Prefix.pch</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.1</string>
-				<key>OTHER_LDFLAGS</key>
-				<string>-ObjC</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>894320E6199219990008FCD3</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>55AEAC00F54A411989BD828E</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>DSTROOT</key>
-				<string>/tmp/BalanceWheel_iOS.dst</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>BalanceWheel-iOS/BalanceWheel-iOS-Prefix.pch</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.1</string>
-				<key>OTHER_LDFLAGS</key>
-				<string>-ObjC</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>894320E7199219990008FCD3</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>894320E8199219990008FCD3</string>
-				<string>894320E9199219990008FCD3</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>894320E8199219990008FCD3</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
-					<string>$(inherited)</string>
-					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
-				</array>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>BalanceWheel-iOS/BalanceWheel-iOS-Prefix.pch</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>INFOPLIST_FILE</key>
-				<string>BalanceWheel-iOSTests/BalanceWheel-iOSTests-Info.plist</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.1</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>xctest</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>894320E9199219990008FCD3</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
-					<string>$(inherited)</string>
-					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
-				</array>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>BalanceWheel-iOS/BalanceWheel-iOS-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>BalanceWheel-iOSTests/BalanceWheel-iOSTests-Info.plist</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.1</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>xctest</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>894320EA199219D70008FCD3</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>894320EB199219F00008FCD3</string>
-				<string>894320EC199219F00008FCD3</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Public</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>894320EB199219F00008FCD3</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>DCJSONUserDefault.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>894320EC199219F00008FCD3</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>DCJSONUserDefault.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>894320ED199219F00008FCD3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>894320EB199219F00008FCD3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>894320EE199219F00008FCD3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>894320EC199219F00008FCD3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>894320EF199219F00008FCD3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>894320EC199219F00008FCD3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>894320F0199219F00008FCD3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>894320EC199219F00008FCD3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>894320F1199219F00008FCD3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>894320EC199219F00008FCD3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>89737AB5EBD84FEFB43E3A58</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Pods-BalanceWheel-OSX-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>AB31B80116BB4924B70C0D34</key>
-		<dict>
-			<key>fileRef</key>
-			<string>1DF6681BD3834B50982446AA</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B746A31E1CC14788B51EDC17</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-BalanceWheel-OSX.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Pods-BalanceWheel-OSX.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CB048BF815E44619919E9A1E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F9BBFA088B204071BAE0F6A5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>DA0DA9AAEF984DFD8ECF6207</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Pods-BalanceWheel-iOS-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>F9BBFA088B204071BAE0F6A5</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods-BalanceWheel-iOS.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>8943206C199218EC0008FCD3</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		894320A31992198E0008FCD3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89432077199218EC0008FCD3 /* Cocoa.framework */; };
+		894320AF1992198E0008FCD3 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89432088199218EC0008FCD3 /* XCTest.framework */; };
+		894320B01992198E0008FCD3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89432077199218EC0008FCD3 /* Cocoa.framework */; };
+		894320B31992198E0008FCD3 /* libBalanceWheel-OSX.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 894320A21992198E0008FCD3 /* libBalanceWheel-OSX.a */; };
+		894320B91992198E0008FCD3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 894320B71992198E0008FCD3 /* InfoPlist.strings */; };
+		894320BB1992198E0008FCD3 /* BalanceWheel_OSXTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 894320BA1992198E0008FCD3 /* BalanceWheel_OSXTests.m */; };
+		894320C8199219990008FCD3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 894320C7199219990008FCD3 /* Foundation.framework */; };
+		894320D5199219990008FCD3 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89432088199218EC0008FCD3 /* XCTest.framework */; };
+		894320D6199219990008FCD3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 894320C7199219990008FCD3 /* Foundation.framework */; };
+		894320D8199219990008FCD3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 894320D7199219990008FCD3 /* UIKit.framework */; };
+		894320DB199219990008FCD3 /* libBalanceWheel-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 894320C6199219990008FCD3 /* libBalanceWheel-iOS.a */; };
+		894320E1199219990008FCD3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 894320DF199219990008FCD3 /* InfoPlist.strings */; };
+		894320E3199219990008FCD3 /* BalanceWheel_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 894320E2199219990008FCD3 /* BalanceWheel_iOSTests.m */; };
+		894320ED199219F00008FCD3 /* DCJSONUserDefault.h in Headers */ = {isa = PBXBuildFile; fileRef = 894320EB199219F00008FCD3 /* DCJSONUserDefault.h */; };
+		894320EE199219F00008FCD3 /* DCJSONUserDefault.m in Sources */ = {isa = PBXBuildFile; fileRef = 894320EC199219F00008FCD3 /* DCJSONUserDefault.m */; };
+		894320EF199219F00008FCD3 /* DCJSONUserDefault.m in Sources */ = {isa = PBXBuildFile; fileRef = 894320EC199219F00008FCD3 /* DCJSONUserDefault.m */; };
+		894320F0199219F00008FCD3 /* DCJSONUserDefault.m in Sources */ = {isa = PBXBuildFile; fileRef = 894320EC199219F00008FCD3 /* DCJSONUserDefault.m */; };
+		894320F1199219F00008FCD3 /* DCJSONUserDefault.m in Sources */ = {isa = PBXBuildFile; fileRef = 894320EC199219F00008FCD3 /* DCJSONUserDefault.m */; };
+		AB31B80116BB4924B70C0D34 /* libPods-BalanceWheel-OSX.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF6681BD3834B50982446AA /* libPods-BalanceWheel-OSX.a */; };
+		CB048BF815E44619919E9A1E /* libPods-BalanceWheel-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F9BBFA088B204071BAE0F6A5 /* libPods-BalanceWheel-iOS.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		894320B11992198E0008FCD3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8943206C199218EC0008FCD3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 894320A11992198E0008FCD3;
+			remoteInfo = "BalanceWheel-OSX";
+		};
+		894320D9199219990008FCD3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8943206C199218EC0008FCD3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 894320C5199219990008FCD3;
+			remoteInfo = "BalanceWheel-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		894320C4199219990008FCD3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1DF6681BD3834B50982446AA /* libPods-BalanceWheel-OSX.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BalanceWheel-OSX.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		55AEAC00F54A411989BD828E /* Pods-BalanceWheel-iOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BalanceWheel-iOS.xcconfig"; path = "Pods/Pods-BalanceWheel-iOS.xcconfig"; sourceTree = "<group>"; };
+		89432077199218EC0008FCD3 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		8943207A199218EC0008FCD3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8943207B199218EC0008FCD3 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		8943207C199218EC0008FCD3 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		89432088199218EC0008FCD3 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		894320A21992198E0008FCD3 /* libBalanceWheel-OSX.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libBalanceWheel-OSX.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		894320A61992198E0008FCD3 /* BalanceWheel-OSX-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BalanceWheel-OSX-Prefix.pch"; sourceTree = "<group>"; };
+		894320AE1992198E0008FCD3 /* BalanceWheel-OSXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BalanceWheel-OSXTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		894320B61992198E0008FCD3 /* BalanceWheel-OSXTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BalanceWheel-OSXTests-Info.plist"; sourceTree = "<group>"; };
+		894320B81992198E0008FCD3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		894320BA1992198E0008FCD3 /* BalanceWheel_OSXTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BalanceWheel_OSXTests.m; sourceTree = "<group>"; };
+		894320C6199219990008FCD3 /* libBalanceWheel-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libBalanceWheel-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		894320C7199219990008FCD3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		894320CB199219990008FCD3 /* BalanceWheel-iOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BalanceWheel-iOS-Prefix.pch"; sourceTree = "<group>"; };
+		894320D4199219990008FCD3 /* BalanceWheel-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BalanceWheel-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		894320D7199219990008FCD3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		894320DE199219990008FCD3 /* BalanceWheel-iOSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BalanceWheel-iOSTests-Info.plist"; sourceTree = "<group>"; };
+		894320E0199219990008FCD3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		894320E2199219990008FCD3 /* BalanceWheel_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BalanceWheel_iOSTests.m; sourceTree = "<group>"; };
+		894320EB199219F00008FCD3 /* DCJSONUserDefault.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCJSONUserDefault.h; sourceTree = "<group>"; };
+		894320EC199219F00008FCD3 /* DCJSONUserDefault.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCJSONUserDefault.m; sourceTree = "<group>"; };
+		B746A31E1CC14788B51EDC17 /* Pods-BalanceWheel-OSX.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BalanceWheel-OSX.xcconfig"; path = "Pods/Pods-BalanceWheel-OSX.xcconfig"; sourceTree = "<group>"; };
+		F9BBFA088B204071BAE0F6A5 /* libPods-BalanceWheel-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BalanceWheel-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8943209F1992198E0008FCD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				894320A31992198E0008FCD3 /* Cocoa.framework in Frameworks */,
+				AB31B80116BB4924B70C0D34 /* libPods-BalanceWheel-OSX.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		894320AB1992198E0008FCD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				894320B01992198E0008FCD3 /* Cocoa.framework in Frameworks */,
+				894320AF1992198E0008FCD3 /* XCTest.framework in Frameworks */,
+				894320B31992198E0008FCD3 /* libBalanceWheel-OSX.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		894320C3199219990008FCD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				894320C8199219990008FCD3 /* Foundation.framework in Frameworks */,
+				CB048BF815E44619919E9A1E /* libPods-BalanceWheel-iOS.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		894320D1199219990008FCD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				894320D5199219990008FCD3 /* XCTest.framework in Frameworks */,
+				894320D8199219990008FCD3 /* UIKit.framework in Frameworks */,
+				894320DB199219990008FCD3 /* libBalanceWheel-iOS.a in Frameworks */,
+				894320D6199219990008FCD3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8943206B199218EC0008FCD3 = {
+			isa = PBXGroup;
+			children = (
+				8943207D199218EC0008FCD3 /* BalanceWheel */,
+				894320A41992198E0008FCD3 /* BalanceWheel-OSX */,
+				894320B41992198E0008FCD3 /* BalanceWheel-OSXTests */,
+				894320C9199219990008FCD3 /* BalanceWheel-iOS */,
+				894320DC199219990008FCD3 /* BalanceWheel-iOSTests */,
+				89432076199218EC0008FCD3 /* Frameworks */,
+				89432075199218EC0008FCD3 /* Products */,
+				B746A31E1CC14788B51EDC17 /* Pods-BalanceWheel-OSX.xcconfig */,
+				55AEAC00F54A411989BD828E /* Pods-BalanceWheel-iOS.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		89432075199218EC0008FCD3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				894320A21992198E0008FCD3 /* libBalanceWheel-OSX.a */,
+				894320AE1992198E0008FCD3 /* BalanceWheel-OSXTests.xctest */,
+				894320C6199219990008FCD3 /* libBalanceWheel-iOS.a */,
+				894320D4199219990008FCD3 /* BalanceWheel-iOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		89432076199218EC0008FCD3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				89432077199218EC0008FCD3 /* Cocoa.framework */,
+				89432088199218EC0008FCD3 /* XCTest.framework */,
+				894320C7199219990008FCD3 /* Foundation.framework */,
+				894320D7199219990008FCD3 /* UIKit.framework */,
+				89432079199218EC0008FCD3 /* Other Frameworks */,
+				1DF6681BD3834B50982446AA /* libPods-BalanceWheel-OSX.a */,
+				F9BBFA088B204071BAE0F6A5 /* libPods-BalanceWheel-iOS.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		89432079199218EC0008FCD3 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8943207A199218EC0008FCD3 /* Foundation.framework */,
+				8943207B199218EC0008FCD3 /* CoreData.framework */,
+				8943207C199218EC0008FCD3 /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		8943207D199218EC0008FCD3 /* BalanceWheel */ = {
+			isa = PBXGroup;
+			children = (
+				894320EA199219D70008FCD3 /* Public */,
+			);
+			path = BalanceWheel;
+			sourceTree = "<group>";
+		};
+		894320A41992198E0008FCD3 /* BalanceWheel-OSX */ = {
+			isa = PBXGroup;
+			children = (
+				894320A51992198E0008FCD3 /* Supporting Files */,
+			);
+			path = "BalanceWheel-OSX";
+			sourceTree = "<group>";
+		};
+		894320A51992198E0008FCD3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				894320A61992198E0008FCD3 /* BalanceWheel-OSX-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		894320B41992198E0008FCD3 /* BalanceWheel-OSXTests */ = {
+			isa = PBXGroup;
+			children = (
+				894320BA1992198E0008FCD3 /* BalanceWheel_OSXTests.m */,
+				894320B51992198E0008FCD3 /* Supporting Files */,
+			);
+			path = "BalanceWheel-OSXTests";
+			sourceTree = "<group>";
+		};
+		894320B51992198E0008FCD3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				894320B61992198E0008FCD3 /* BalanceWheel-OSXTests-Info.plist */,
+				894320B71992198E0008FCD3 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		894320C9199219990008FCD3 /* BalanceWheel-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				894320CA199219990008FCD3 /* Supporting Files */,
+			);
+			path = "BalanceWheel-iOS";
+			sourceTree = "<group>";
+		};
+		894320CA199219990008FCD3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				894320CB199219990008FCD3 /* BalanceWheel-iOS-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		894320DC199219990008FCD3 /* BalanceWheel-iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				894320E2199219990008FCD3 /* BalanceWheel_iOSTests.m */,
+				894320DD199219990008FCD3 /* Supporting Files */,
+			);
+			path = "BalanceWheel-iOSTests";
+			sourceTree = "<group>";
+		};
+		894320DD199219990008FCD3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				894320DE199219990008FCD3 /* BalanceWheel-iOSTests-Info.plist */,
+				894320DF199219990008FCD3 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		894320EA199219D70008FCD3 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				894320EB199219F00008FCD3 /* DCJSONUserDefault.h */,
+				894320EC199219F00008FCD3 /* DCJSONUserDefault.m */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		894320A01992198E0008FCD3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				894320ED199219F00008FCD3 /* DCJSONUserDefault.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		894320A11992198E0008FCD3 /* BalanceWheel-OSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 894320BC1992198E0008FCD3 /* Build configuration list for PBXNativeTarget "BalanceWheel-OSX" */;
+			buildPhases = (
+				0E5AD530A00240BE98FA8BA2 /* Check Pods Manifest.lock */,
+				8943209E1992198E0008FCD3 /* Sources */,
+				8943209F1992198E0008FCD3 /* Frameworks */,
+				894320A01992198E0008FCD3 /* Headers */,
+				89737AB5EBD84FEFB43E3A58 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BalanceWheel-OSX";
+			productName = "BalanceWheel-OSX";
+			productReference = 894320A21992198E0008FCD3 /* libBalanceWheel-OSX.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		894320AD1992198E0008FCD3 /* BalanceWheel-OSXTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 894320BF1992198E0008FCD3 /* Build configuration list for PBXNativeTarget "BalanceWheel-OSXTests" */;
+			buildPhases = (
+				894320AA1992198E0008FCD3 /* Sources */,
+				894320AB1992198E0008FCD3 /* Frameworks */,
+				894320AC1992198E0008FCD3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				894320B21992198E0008FCD3 /* PBXTargetDependency */,
+			);
+			name = "BalanceWheel-OSXTests";
+			productName = "BalanceWheel-OSXTests";
+			productReference = 894320AE1992198E0008FCD3 /* BalanceWheel-OSXTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		894320C5199219990008FCD3 /* BalanceWheel-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 894320E4199219990008FCD3 /* Build configuration list for PBXNativeTarget "BalanceWheel-iOS" */;
+			buildPhases = (
+				48A6F6724CBF450581255789 /* Check Pods Manifest.lock */,
+				894320C2199219990008FCD3 /* Sources */,
+				894320C3199219990008FCD3 /* Frameworks */,
+				894320C4199219990008FCD3 /* CopyFiles */,
+				DA0DA9AAEF984DFD8ECF6207 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BalanceWheel-iOS";
+			productName = "BalanceWheel-iOS";
+			productReference = 894320C6199219990008FCD3 /* libBalanceWheel-iOS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		894320D3199219990008FCD3 /* BalanceWheel-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 894320E7199219990008FCD3 /* Build configuration list for PBXNativeTarget "BalanceWheel-iOSTests" */;
+			buildPhases = (
+				894320D0199219990008FCD3 /* Sources */,
+				894320D1199219990008FCD3 /* Frameworks */,
+				894320D2199219990008FCD3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				894320DA199219990008FCD3 /* PBXTargetDependency */,
+			);
+			name = "BalanceWheel-iOSTests";
+			productName = "BalanceWheel-iOSTests";
+			productReference = 894320D4199219990008FCD3 /* BalanceWheel-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8943206C199218EC0008FCD3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Derek Chen";
+			};
+			buildConfigurationList = 8943206F199218EC0008FCD3 /* Build configuration list for PBXProject "BalanceWheel" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8943206B199218EC0008FCD3;
+			productRefGroup = 89432075199218EC0008FCD3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				894320A11992198E0008FCD3 /* BalanceWheel-OSX */,
+				894320AD1992198E0008FCD3 /* BalanceWheel-OSXTests */,
+				894320C5199219990008FCD3 /* BalanceWheel-iOS */,
+				894320D3199219990008FCD3 /* BalanceWheel-iOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		894320AC1992198E0008FCD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				894320B91992198E0008FCD3 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		894320D2199219990008FCD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				894320E1199219990008FCD3 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0E5AD530A00240BE98FA8BA2 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		48A6F6724CBF450581255789 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		89737AB5EBD84FEFB43E3A58 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-BalanceWheel-OSX-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA0DA9AAEF984DFD8ECF6207 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-BalanceWheel-iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8943209E1992198E0008FCD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				894320EE199219F00008FCD3 /* DCJSONUserDefault.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		894320AA1992198E0008FCD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				894320BB1992198E0008FCD3 /* BalanceWheel_OSXTests.m in Sources */,
+				894320EF199219F00008FCD3 /* DCJSONUserDefault.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		894320C2199219990008FCD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				894320F0199219F00008FCD3 /* DCJSONUserDefault.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		894320D0199219990008FCD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				894320E3199219990008FCD3 /* BalanceWheel_iOSTests.m in Sources */,
+				894320F1199219F00008FCD3 /* DCJSONUserDefault.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		894320B21992198E0008FCD3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 894320A11992198E0008FCD3 /* BalanceWheel-OSX */;
+			targetProxy = 894320B11992198E0008FCD3 /* PBXContainerItemProxy */;
+		};
+		894320DA199219990008FCD3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 894320C5199219990008FCD3 /* BalanceWheel-iOS */;
+			targetProxy = 894320D9199219990008FCD3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		894320B71992198E0008FCD3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				894320B81992198E0008FCD3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		894320DF199219990008FCD3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				894320E0199219990008FCD3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		89432096199218ED0008FCD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		89432097199218ED0008FCD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		894320BD1992198E0008FCD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B746A31E1CC14788B51EDC17 /* Pods-BalanceWheel-OSX.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BalanceWheel-OSX/BalanceWheel-OSX-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		894320BE1992198E0008FCD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B746A31E1CC14788B51EDC17 /* Pods-BalanceWheel-OSX.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BalanceWheel-OSX/BalanceWheel-OSX-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		894320C01992198E0008FCD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B746A31E1CC14788B51EDC17 /* Pods-BalanceWheel-OSX.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BalanceWheel-OSX/BalanceWheel-OSX-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BalanceWheel-OSXTests/BalanceWheel-OSXTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		894320C11992198E0008FCD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BalanceWheel-OSX/BalanceWheel-OSX-Prefix.pch";
+				INFOPLIST_FILE = "BalanceWheel-OSXTests/BalanceWheel-OSXTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		894320E5199219990008FCD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55AEAC00F54A411989BD828E /* Pods-BalanceWheel-iOS.xcconfig */;
+			buildSettings = {
+				DSTROOT = /tmp/BalanceWheel_iOS.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BalanceWheel-iOS/BalanceWheel-iOS-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		894320E6199219990008FCD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55AEAC00F54A411989BD828E /* Pods-BalanceWheel-iOS.xcconfig */;
+			buildSettings = {
+				DSTROOT = /tmp/BalanceWheel_iOS.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BalanceWheel-iOS/BalanceWheel-iOS-Prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		894320E8199219990008FCD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55AEAC00F54A411989BD828E /* Pods-BalanceWheel-iOS.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BalanceWheel-iOS/BalanceWheel-iOS-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BalanceWheel-iOSTests/BalanceWheel-iOSTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		894320E9199219990008FCD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BalanceWheel-iOS/BalanceWheel-iOS-Prefix.pch";
+				INFOPLIST_FILE = "BalanceWheel-iOSTests/BalanceWheel-iOSTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8943206F199218EC0008FCD3 /* Build configuration list for PBXProject "BalanceWheel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89432096199218ED0008FCD3 /* Debug */,
+				89432097199218ED0008FCD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		894320BC1992198E0008FCD3 /* Build configuration list for PBXNativeTarget "BalanceWheel-OSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				894320BD1992198E0008FCD3 /* Debug */,
+				894320BE1992198E0008FCD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		894320BF1992198E0008FCD3 /* Build configuration list for PBXNativeTarget "BalanceWheel-OSXTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				894320C01992198E0008FCD3 /* Debug */,
+				894320C11992198E0008FCD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		894320E4199219990008FCD3 /* Build configuration list for PBXNativeTarget "BalanceWheel-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				894320E5199219990008FCD3 /* Debug */,
+				894320E6199219990008FCD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		894320E7199219990008FCD3 /* Build configuration list for PBXNativeTarget "BalanceWheel-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				894320E8199219990008FCD3 /* Debug */,
+				894320E9199219990008FCD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8943206C199218EC0008FCD3 /* Project object */;
+}
