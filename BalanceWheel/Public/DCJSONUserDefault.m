@@ -93,6 +93,7 @@ DEFINE_SINGLETON_FOR_CLASS(DCJSONUserDefault)
         result = path;
     } while (NO);
     [output close];
+    output = nil;
     return result;
 }
 
@@ -116,12 +117,33 @@ DEFINE_SINGLETON_FOR_CLASS(DCJSONUserDefault)
 - (BOOL)initContents:(NSString *)filePath {
     BOOL result = NO;
     NSInputStream *input = nil;
+    NSOutputStream *output = nil;
     do {
+        if (self.storeFilePath && self.rootDict) {
+            [self synchronize];
+        }
         self.storeFilePath = nil;
+        
         if (filePath) {
             NSFileManager *fileMgr = [NSFileManager defaultManager];
             BOOL isDir = NO;
             if ([fileMgr fileExistsAtPath:filePath isDirectory:&isDir] && !isDir) {
+                self.storeFilePath = filePath;
+            } else {
+                output = [NSOutputStream outputStreamToFileAtPath:filePath append:NO];
+                [output open];
+                
+                NSDictionary *emptyDict = [NSDictionary dictionary];
+                
+                NSError *err = nil;
+                NSUInteger resultCount = [NSJSONSerialization writeJSONObject:emptyDict toStream:output options:0 error:&err];
+                if (resultCount == 0 || err) {
+                    NSLog(@"%@", [err localizedDescription]);
+                    break;
+                }
+                [output close];
+                output = nil;
+                
                 self.storeFilePath = filePath;
             }
         }
@@ -144,7 +166,10 @@ DEFINE_SINGLETON_FOR_CLASS(DCJSONUserDefault)
         
         result = YES;
     } while (NO);
+    [output close];
+    output = nil;
     [input close];
+    input = nil;
     return result;
 }
 
@@ -169,6 +194,7 @@ DEFINE_SINGLETON_FOR_CLASS(DCJSONUserDefault)
         result = YES;
     } while (NO);
     [output close];
+    output = nil;
     return result;
 }
 
