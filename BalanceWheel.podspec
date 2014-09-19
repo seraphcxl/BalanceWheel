@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "BalanceWheel"
-  s.version      = "0.9.0"
+  s.version      = "0.9.1"
   s.summary      = "A user default base on JSON."
 
   s.description  = <<-DESC
@@ -63,8 +63,8 @@ Pod::Spec.new do |s|
   # s.platform     = :ios, "5.0"
 
   #  When using multiple platforms
-  s.ios.deployment_target = "5.0"
-  s.osx.deployment_target = "10.7"
+  s.ios.deployment_target = "7.0"
+  s.osx.deployment_target = "10.9"
 
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -126,6 +126,6 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  s.dependency "Tourbillon", "~> 0.9.1"
+  s.dependency "Tourbillon", "~> 0.9.8"
 
 end
