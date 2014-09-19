@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "BalanceWheel"
-  s.version      = "0.9.1"
+  s.version      = "0.9.2"
   s.summary      = "A user default base on JSON."
 
   s.description  = <<-DESC
