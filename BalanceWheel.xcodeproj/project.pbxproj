@@ -362,7 +362,7 @@
 		8943206C199218EC0008FCD3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = "Derek Chen";
 			};
 			buildConfigurationList = 8943206F199218EC0008FCD3 /* Build configuration list for PBXProject "BalanceWheel" */;
@@ -611,6 +611,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B746A31E1CC14788B51EDC17 /* Pods-BalanceWheel-OSX.xcconfig */;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BalanceWheel-OSX/BalanceWheel-OSX-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -625,6 +626,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B746A31E1CC14788B51EDC17 /* Pods-BalanceWheel-OSX.xcconfig */;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BalanceWheel-OSX/BalanceWheel-OSX-Prefix.pch";
 				PRODUCT_NAME = "$(TARGET_NAME)";

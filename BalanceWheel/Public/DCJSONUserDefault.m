@@ -12,11 +12,14 @@ NSString *kDCJSONUserDefaultNameSeparator = @".";
 NSString *kDCJSONUserDefaultIdentifier = @"DCJSONUserDefault";
 NSString *kDCJSONUserDefaultExtension = @"jud";
 
+NSUInteger kDCJSONUserDefaultEncryptBlockLength = 256;
+
 @interface DCJSONUserDefault () {
 }
 
-@property (copy) NSString *storeFilePath;
-@property (strong) NSMutableDictionary *rootDict;
+@property (copy, nonatomic) NSString *storeFilePath;
+@property (strong, nonatomic) NSMutableDictionary *rootDict;
+@property (assign, nonatomic) BOOL encrypted;
 
 + (NSMutableArray *)userDefaultName2KeyArray:(NSString *)userDefaultName;
 + (NSString *)queryStoreFilePath;
@@ -25,9 +28,9 @@ NSString *kDCJSONUserDefaultExtension = @"jud";
 
 @implementation DCJSONUserDefault
 
+@synthesize storeFilePath = _storeFilePath;
 @synthesize rootDict = _rootDict;
-
-DEFINE_SINGLETON_FOR_CLASS(DCJSONUserDefault)
+@synthesize encrypted = _encrypted;
 
 + (NSMutableArray *)userDefaultName2KeyArray:(NSString *)userDefaultName {
     NSMutableArray *result = nil;
@@ -114,16 +117,17 @@ DEFINE_SINGLETON_FOR_CLASS(DCJSONUserDefault)
     } while (NO);
 }
 
-- (BOOL)initContents:(NSString *)filePath {
+- (BOOL)initWithContents:(NSString *)filePath shouldEncrypt:(BOOL)shouldEncrypt {
     BOOL result = NO;
     NSInputStream *input = nil;
     NSOutputStream *output = nil;
+    NSString *pathForDecrypt = nil;
     do {
         if (self.storeFilePath && self.rootDict) {
             [self synchronize];
         }
         self.storeFilePath = nil;
-        
+        _encrypted = shouldEncrypt;
         if (filePath) {
             NSFileManager *fileMgr = [NSFileManager defaultManager];
             BOOL isDir = NO;
@@ -144,6 +148,12 @@ DEFINE_SINGLETON_FOR_CLASS(DCJSONUserDefault)
                 [output close];
                 output = nil;
                 
+                if (_encrypted) {
+                    if (![DCXOREncryptUtility encryptFile:filePath toPath:filePath withBlockLength:kDCJSONUserDefaultEncryptBlockLength]) {
+                        break;
+                    }
+                }
+                
                 self.storeFilePath = filePath;
             }
         }
@@ -152,7 +162,16 @@ DEFINE_SINGLETON_FOR_CLASS(DCJSONUserDefault)
             self.storeFilePath = [DCJSONUserDefault queryStoreFilePath];
         }
         
-        input = [NSInputStream inputStreamWithFileAtPath:self.storeFilePath];
+        if (_encrypted) {
+            pathForDecrypt = [NSString stringWithFormat:@"%@_%@", self.storeFilePath, [NSObject createUniqueStrByUUID]];
+            if (![DCXOREncryptUtility decryptFile:self.storeFilePath toPath:pathForDecrypt withBlockLength:kDCJSONUserDefaultEncryptBlockLength]) {
+                break;
+            }
+            input = [NSInputStream inputStreamWithFileAtPath:pathForDecrypt];
+        } else {
+            input = [NSInputStream inputStreamWithFileAtPath:self.storeFilePath];
+        }
+        
         [input open];
         
         NSError *err = nil;
@@ -166,10 +185,23 @@ DEFINE_SINGLETON_FOR_CLASS(DCJSONUserDefault)
         
         result = YES;
     } while (NO);
+    
     [output close];
     output = nil;
+    
     [input close];
     input = nil;
+    
+    if (pathForDecrypt) {
+        NSFileManager *fileMgr = [NSFileManager defaultManager];
+        NSError *err = nil;
+        if ([fileMgr fileExistsAtPath:pathForDecrypt]) {
+            if (![fileMgr removeItemAtPath:pathForDecrypt error:&err] || err) {
+                NSLog(@"%@", [err localizedDescription]);
+            }
+        }
+    }
+    
     return result;
 }
 
@@ -189,6 +221,15 @@ DEFINE_SINGLETON_FOR_CLASS(DCJSONUserDefault)
         if (resultCount == 0 || err) {
             NSLog(@"%@", [err localizedDescription]);
             break;
+        }
+        
+        if (_encrypted) {
+            [output close];
+            output = nil;
+            
+            if (![DCXOREncryptUtility encryptFile:self.storeFilePath toPath:self.storeFilePath withBlockLength:kDCJSONUserDefaultEncryptBlockLength]) {
+                break;
+            }
         }
         
         result = YES;
@@ -215,7 +256,7 @@ DEFINE_SINGLETON_FOR_CLASS(DCJSONUserDefault)
             break;
         }
         
-        if (![self initContents:self.storeFilePath]) {
+        if (![self initWithContents:self.storeFilePath shouldEncrypt:_encrypted]) {
             break;
         }
         

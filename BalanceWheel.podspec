@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "BalanceWheel"
-  s.version      = "0.9.2"
+  s.version      = "0.9.3"
   s.summary      = "A user default base on JSON."
 
   s.description  = <<-DESC
@@ -126,6 +126,6 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  s.dependency "Tourbillon", "~> 0.9.8"
+  s.dependency "Tourbillon", "~> 0.9.10"
 
 end

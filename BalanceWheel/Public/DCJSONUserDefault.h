@@ -14,12 +14,14 @@ extern NSString *kDCJSONUserDefaultNameSeparator;
 extern NSString *kDCJSONUserDefaultIdentifier;
 extern NSString *kDCJSONUserDefaultExtension;
 
+extern NSUInteger kDCJSONUserDefaultEncryptBlockLength;
+
 @interface DCJSONUserDefault : NSObject {
 }
 
-DEFINE_SINGLETON_FOR_HEADER(DCJSONUserDefault)
+@property (assign, nonatomic, readonly, getter=isEncrypted) BOOL encrypted;
 
-- (BOOL)initContents:(NSString *)filePath;
+- (BOOL)initWithContents:(NSString *)filePath shouldEncrypt:(BOOL)shouldEncrypt;
 - (BOOL)isInited;
 - (BOOL)synchronize;
 
