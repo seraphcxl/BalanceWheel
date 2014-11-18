@@ -10,5 +10,6 @@
 #define BalanceWheel_DCBalanceWheel_h
 
 #import "DCJSONUserDefault.h"
+#import "DCJSONFile.h"
 
 #endif

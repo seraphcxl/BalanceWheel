@@ -10,42 +10,17 @@
 
 #import "Tourbillon/DCTourbillon.h"
 
-extern NSString *kDCJSONUserDefaultNameSeparator;
-extern NSString *kDCJSONUserDefaultIdentifier;
-extern NSString *kDCJSONUserDefaultExtension;
-
-extern NSUInteger kDCJSONUserDefaultEncryptBlockLength;
+@class DCJSONFile;
 
 @interface DCJSONUserDefault : NSObject {
 }
 
-@property (assign, nonatomic, readonly, getter=isEncrypted) BOOL encrypted;
+DEFINE_SINGLETON_FOR_HEADER(DCJSONUserDefault)
 
-- (BOOL)initWithContents:(NSString *)filePath shouldEncrypt:(BOOL)shouldEncrypt;
-- (BOOL)isInited;
+- (NSUInteger)getManagedJSONFileCount;
+- (NSArray *)getAllManagedJSONFilePaths;
+- (BOOL)setJSONFile:(DCJSONFile *)file byPath:(NSString *)path;
+- (DCJSONFile *)getJSONFileByPath:(NSString *)path;
 - (BOOL)synchronize;
-
-- (NSString *)filePath;
-
-- (BOOL)registerDefaults:(NSDictionary *)registrationDictionary;
-
-- (id)objectForKey:(NSString *)defaultName;
-- (void)setObject:(id)value forKey:(NSString *)defaultName;
-- (void)removeObjectForKey:(NSString *)defaultName;
-
-- (NSString *)stringForKey:(NSString *)defaultName;
-- (NSArray *)arrayForKey:(NSString *)defaultName;
-- (NSDictionary *)dictionaryForKey:(NSString *)defaultName;
-- (NSData *)dataForKey:(NSString *)defaultName;
-- (NSInteger)integerForKey:(NSString *)defaultName;
-- (float)floatForKey:(NSString *)defaultName;
-- (double)doubleForKey:(NSString *)defaultName;
-- (BOOL)boolForKey:(NSString *)defaultName;
-- (NSURL *)URLForKey:(NSString *)defaultName;
-
-- (void)setInteger:(NSInteger)value forKey:(NSString *)defaultName;
-- (void)setFloat:(float)value forKey:(NSString *)defaultName;
-- (void)setDouble:(double)value forKey:(NSString *)defaultName;
-- (void)setBool:(BOOL)value forKey:(NSString *)defaultName;
 
 @end

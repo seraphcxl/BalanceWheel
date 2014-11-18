@@ -20,12 +20,20 @@
 		894320DB199219990008FCD3 /* libBalanceWheel-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 894320C6199219990008FCD3 /* libBalanceWheel-iOS.a */; };
 		894320E1199219990008FCD3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 894320DF199219990008FCD3 /* InfoPlist.strings */; };
 		894320E3199219990008FCD3 /* BalanceWheel_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 894320E2199219990008FCD3 /* BalanceWheel_iOSTests.m */; };
-		894320ED199219F00008FCD3 /* DCJSONUserDefault.h in Headers */ = {isa = PBXBuildFile; fileRef = 894320EB199219F00008FCD3 /* DCJSONUserDefault.h */; };
+		894320ED199219F00008FCD3 /* DCJSONUserDefault.h in Headers */ = {isa = PBXBuildFile; fileRef = 894320EB199219F00008FCD3 /* DCJSONUserDefault.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		894320EE199219F00008FCD3 /* DCJSONUserDefault.m in Sources */ = {isa = PBXBuildFile; fileRef = 894320EC199219F00008FCD3 /* DCJSONUserDefault.m */; };
 		894320EF199219F00008FCD3 /* DCJSONUserDefault.m in Sources */ = {isa = PBXBuildFile; fileRef = 894320EC199219F00008FCD3 /* DCJSONUserDefault.m */; };
 		894320F0199219F00008FCD3 /* DCJSONUserDefault.m in Sources */ = {isa = PBXBuildFile; fileRef = 894320EC199219F00008FCD3 /* DCJSONUserDefault.m */; };
 		894320F1199219F00008FCD3 /* DCJSONUserDefault.m in Sources */ = {isa = PBXBuildFile; fileRef = 894320EC199219F00008FCD3 /* DCJSONUserDefault.m */; };
-		89BB70F8199316DE0064B9C4 /* DCBalanceWheel.h in Headers */ = {isa = PBXBuildFile; fileRef = 89BB70F7199316DE0064B9C4 /* DCBalanceWheel.h */; };
+		899CB0CD1A1AD10900D7DCD7 /* DCJSONFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 899CB0CB1A1AD10900D7DCD7 /* DCJSONFile.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		899CB0CE1A1AD10900D7DCD7 /* DCJSONFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 899CB0CC1A1AD10900D7DCD7 /* DCJSONFile.m */; };
+		899CB0CF1A1AD10900D7DCD7 /* DCJSONFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 899CB0CC1A1AD10900D7DCD7 /* DCJSONFile.m */; };
+		899CB0D01A1AD10900D7DCD7 /* DCJSONFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 899CB0CC1A1AD10900D7DCD7 /* DCJSONFile.m */; };
+		899CB0D11A1AD10900D7DCD7 /* DCJSONFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 899CB0CC1A1AD10900D7DCD7 /* DCJSONFile.m */; };
+		899CB0D21A1AD5BC00D7DCD7 /* DCBalanceWheel.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89BB70F7199316DE0064B9C4 /* DCBalanceWheel.h */; };
+		899CB0D31A1AD5BC00D7DCD7 /* DCJSONUserDefault.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 894320EB199219F00008FCD3 /* DCJSONUserDefault.h */; };
+		899CB0D41A1AD5BC00D7DCD7 /* DCJSONFile.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 899CB0CB1A1AD10900D7DCD7 /* DCJSONFile.h */; };
+		89BB70F8199316DE0064B9C4 /* DCBalanceWheel.h in Headers */ = {isa = PBXBuildFile; fileRef = 89BB70F7199316DE0064B9C4 /* DCBalanceWheel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AB31B80116BB4924B70C0D34 /* libPods-BalanceWheel-OSX.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF6681BD3834B50982446AA /* libPods-BalanceWheel-OSX.a */; };
 		CB048BF815E44619919E9A1E /* libPods-BalanceWheel-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F9BBFA088B204071BAE0F6A5 /* libPods-BalanceWheel-iOS.a */; };
 /* End PBXBuildFile section */
@@ -54,6 +62,9 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				899CB0D21A1AD5BC00D7DCD7 /* DCBalanceWheel.h in CopyFiles */,
+				899CB0D31A1AD5BC00D7DCD7 /* DCJSONUserDefault.h in CopyFiles */,
+				899CB0D41A1AD5BC00D7DCD7 /* DCJSONFile.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +94,8 @@
 		894320E2199219990008FCD3 /* BalanceWheel_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BalanceWheel_iOSTests.m; sourceTree = "<group>"; };
 		894320EB199219F00008FCD3 /* DCJSONUserDefault.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCJSONUserDefault.h; sourceTree = "<group>"; };
 		894320EC199219F00008FCD3 /* DCJSONUserDefault.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCJSONUserDefault.m; sourceTree = "<group>"; };
+		899CB0CB1A1AD10900D7DCD7 /* DCJSONFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCJSONFile.h; sourceTree = "<group>"; };
+		899CB0CC1A1AD10900D7DCD7 /* DCJSONFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCJSONFile.m; sourceTree = "<group>"; };
 		89BB70F7199316DE0064B9C4 /* DCBalanceWheel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCBalanceWheel.h; sourceTree = "<group>"; };
 		B746A31E1CC14788B51EDC17 /* Pods-BalanceWheel-OSX.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BalanceWheel-OSX.xcconfig"; path = "Pods/Pods-BalanceWheel-OSX.xcconfig"; sourceTree = "<group>"; };
 		F9BBFA088B204071BAE0F6A5 /* libPods-BalanceWheel-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BalanceWheel-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -263,6 +276,8 @@
 			children = (
 				894320EB199219F00008FCD3 /* DCJSONUserDefault.h */,
 				894320EC199219F00008FCD3 /* DCJSONUserDefault.m */,
+				899CB0CB1A1AD10900D7DCD7 /* DCJSONFile.h */,
+				899CB0CC1A1AD10900D7DCD7 /* DCJSONFile.m */,
 			);
 			path = Public;
 			sourceTree = "<group>";
@@ -274,6 +289,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				899CB0CD1A1AD10900D7DCD7 /* DCJSONFile.h in Headers */,
 				89BB70F8199316DE0064B9C4 /* DCBalanceWheel.h in Headers */,
 				894320ED199219F00008FCD3 /* DCJSONUserDefault.h in Headers */,
 			);
@@ -472,6 +488,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				899CB0CE1A1AD10900D7DCD7 /* DCJSONFile.m in Sources */,
 				894320EE199219F00008FCD3 /* DCJSONUserDefault.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -481,6 +498,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				894320BB1992198E0008FCD3 /* BalanceWheel_OSXTests.m in Sources */,
+				899CB0CF1A1AD10900D7DCD7 /* DCJSONFile.m in Sources */,
 				894320EF199219F00008FCD3 /* DCJSONUserDefault.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -489,6 +507,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				899CB0D01A1AD10900D7DCD7 /* DCJSONFile.m in Sources */,
 				894320F0199219F00008FCD3 /* DCJSONUserDefault.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -498,6 +517,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				894320E3199219990008FCD3 /* BalanceWheel_iOSTests.m in Sources */,
+				899CB0D11A1AD10900D7DCD7 /* DCJSONFile.m in Sources */,
 				894320F1199219F00008FCD3 /* DCJSONUserDefault.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
